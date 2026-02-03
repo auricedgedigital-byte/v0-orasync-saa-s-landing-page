@@ -3,6 +3,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ResultsContent } from "@/components/results-content"
 
+export const dynamic = "force-dynamic"
+
 export default function AuditResultsPage() {
   return (
     <main className="min-h-screen flex flex-col bg-background">

@@ -6,6 +6,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AuditForm } from "@/components/audit-form"
 
+export const dynamic = "force-dynamic"
+
 export default function AuditPage() {
   const router = useRouter()
   const [formData, setFormData] = useState({

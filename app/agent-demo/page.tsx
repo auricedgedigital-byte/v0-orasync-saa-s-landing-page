@@ -1,6 +1,9 @@
+import { Suspense } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AgentDemo } from "@/components/agent-demo"
+
+export const dynamic = "force-dynamic"
 
 export default function AgentDemoPage() {
   return (
@@ -19,7 +22,9 @@ export default function AgentDemoPage() {
             </p>
           </div>
 
-          <AgentDemo />
+          <Suspense fallback={<div className="h-[600px] flex items-center justify-center border border-border rounded-lg bg-card">Loading Demo...</div>}>
+            <AgentDemo />
+          </Suspense>
 
           {/* Context note */}
           <div className="mt-12 p-6 bg-secondary border border-border rounded-lg">

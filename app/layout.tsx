@@ -18,12 +18,13 @@ export const metadata: Metadata = {
   title: "Auric Edge Digital | Systems & AI Consulting",
   description:
     "AI-powered automation, dashboards, and workflows designed to reduce operational waste and increase revenue — without adding headcount.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-    generator: 'v0.app'
+  generator: "v0.app",
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({
